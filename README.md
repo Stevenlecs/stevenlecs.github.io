@@ -1,2 +1,2 @@
 # stevenlecs.github.io
-Portfolio Website
+4th Year CS Major at Georgia Tech
