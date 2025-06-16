@@ -1,24 +1,20 @@
 {
   "projects": [
-    {
-      "title": "E-Commerce Website",
-      "description": "Currently creating an E-Commerce website for a small business that delivers desserts in Atlanta",
-      "technologies": ["React.js", "Node.js", "Stripe"]
-    },
+
     {
       "title": "Firefighter ChatBot",
       "description": "Built a webpage that utilizes Retrieval Augmented Generation with the context of past wildfire data to power a chatbot that can help firefighters",
-      "technologies": ["React.js", "Flask", "AWS S3", "RAG"]
+      "technologies": ["React.js", "Next.js", "AWS S3", "RAG"]
     },
     {
       "title": "Community Finder - Georgia Tech Human-Computer interaction",
       "description": "Worked on an iterative user-centered research project and designed a mobile app to match Georgia Tech students with communities to support them",
-      "technologies": ["Figma", "User Research"]
+      "technologies": ["Figma", "User Research", "UI/UX Design"]
     },
     {
       "title": "Electronic ARTrium - Georgia Tech VIP",
       "description": "Led a software team to integrate computer vision into an immersive multimedia art exhibit",
-      "technologies": ["Python", "OpenCV", "Unity", "PostgreSQL"]
+      "technologies": ["Python", "OpenCV", "Unity", "MySQL"]
     },
     {
       "title": "Lung Cancer Predictor",
