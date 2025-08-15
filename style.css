@@ -1,15 +1,21 @@
 /* Base styles */
 :root {
     --primary-color: #2d2d2d;
-    --secondary-color: #f8f8f8;
-    --accent-color: #cad2da;
+    --secondary-color: #c3c3c3e9;
+    --accent-color: #bbe7fbe0;
     --text-color: #2d2d2d;
     --spacing-unit: 8px;
     --font-primary: 'Inter', sans-serif;
+    --font-title: "Montserrat", sans-serif;
 }
+
 
 html {
     scroll-behavior: smooth;
+}
+
+p {
+    font-family: var(--font-primary);
 }
 
 body {
@@ -100,6 +106,7 @@ body {
     border: 1px solid var(--accent-color);
     color: var(--text-color);
     transition: all 0.2s ease;
+    font-family: var(--font-primary);
 }
 
 .techTag:hover {
@@ -113,19 +120,72 @@ body {
     color: inherit;
     display: block;
     height: 100%;
+    font-family: var(--font-primary);
 }
 
 .projectBox h3 {
     margin: 0 0 16px 0;
     color: var(--primary-color);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-style: italic;
 }
 
 .projectBox p {
     margin: 0 0 16px 0;
     color: #666;
+    font-family: var(--font-primary);
 }
 
+h2 {
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
 
+/* About */
+#about {
+    background-color: var(--accent-color);
+    margin-top: 30px;
+    padding: calc(var(--spacing-unit) * 10) 0;
+    scroll-margin-top: 80px;
+}
+
+.about-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.profile-image {
+    flex: 0 0 300px;
+    margin-top: 8px;
+}
+
+.profile-image img {
+    width: 420px;
+    height: 355px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 30px;
+}
+
+@media (max-width: 768px) {
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-top: 24px;
+    }
+}
 /* Hero Section */
 .hero {
     height: 80vh;
@@ -138,20 +198,26 @@ body {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease-out forwards;
+    background-image: url('images/gris.gif');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content h1 {
     font-family: var(--font-primary);
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0;
     line-height: 1.2;
+    color: #000000;
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: calc(var(--spacing-unit) * 3) 0;
-    color: #666;
+    font-family: var(--font-primary);
+    color: #323232;
 }
 
 .location {
@@ -181,6 +247,7 @@ body {
 .section h2 {
     font-size: 2rem;
     margin-bottom: calc(var(--spacing-unit) * 6);
+    font-family: var(--font-primary);
 }
 
 .lead-text {
@@ -204,6 +271,7 @@ body {
     border-radius: 4px;
     font-weight: 500;
     transition: background-color 0.3s ease;
+    font-family: var(--font-primary);
 }
 
 .resume-btn:hover {

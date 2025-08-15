@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Community Finder - Georgia Tech Human-Computer Interaction",
-      "description": "Designed a mobile app to match Georgia Tech students with communities to support them",
+      "description": "Designed a mobile app to match Georgia Tech students with communities to reduce social isolation on campus",
       "technologies": ["Figma", "User Research", "UI/UX Design"],
       "link": "https://www.figma.com/proto/68PqSOAC46LiC3x80bcyTC/Prototype-Demo?node-id=0-1&t=tGl34boFbrt8IJZJ-1"
     },
@@ -14,7 +14,7 @@
     },
     {
       "title": "League of Legends Scrollytelling Website",
-      "description": "Highlighted the GOAT Faker's Worlds journey with interactive Info Vizualizations",
+      "description": "Highlighted the GOAT Faker's Worlds Spring 2024 split with interactive Info Vizualizations",
       "technologies": ["JavaScript", "HTML/CSS", "D3.js"],
       "link": "https://stevenlecs.github.io/leagueviz/"
     },
