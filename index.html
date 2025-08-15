@@ -7,30 +7,61 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="header">
-        <svg width="100%" height="100%" style="position: absolute; top: 0; left: 0; z-index: 0; opacity: 0.05;">
-            <rect width="100%" height="100%"/>
-        </svg>
-        <h1>Steven Le</h1>
-        <p>MSCS Graduate from Georgia Tech | Software engineer</p>
-        <a href="resume.pdf" download class="resumeBtn">Download My Resume</a>
-    </div>
+<body id="top">
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#top" class="nav-logo">SL</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="resume.pdf" download class="btn resume-btn">Resume</a>
+                <a href="https://github.com/stevenlecs" target="_blank" class="social-icon">
+                    <img src="images/github.png" alt="GitHub" width="25" height="25">
+                </a>
+                <a href="https://linkedin.com/in/steven-le-906032178/" target="_blank" class="social-icon">
+                    <img src="images/linkedin.png" alt="LinkedIn" width="25" height="25">
+                </a>
+            </div>
 
-    <div class="container">
-        <section class="section" id="about">
-            <h2>About Me</h2>
-            <p>I'm a software engineer experienced in full-stack and AI/ML.  
-                In my free time you can catch me learning to cook new recipes and populating my Letterboxd account!</p>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Steven Le</h1>
+            <p class="subtitle">Machine Learning and Software Engineer</p>
+            <p class="location">Based in Washington DC</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section about" id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p class="lead-text">Georgia Tech MSCS Grad and ML Enthusiast</p>
+                <p>Currently working as a Machine Learning engineer in the defense space, focused on making
+                    operators' lives easier through Computer Vision and LLMs
+                </p>
+            </div>
         </section>
 
-        <section class="section" id="projects">
-            <h2>Projects</h2>
-            <div id="projectsList"></div>
+        <section class="section projects" id="projects">
+            <div class="section-content">
+                <h2>Projects</h2>
+                <div id="projectsList" class="projects-grid"></div>
+            </div>
         </section>
-    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-right">
+                
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

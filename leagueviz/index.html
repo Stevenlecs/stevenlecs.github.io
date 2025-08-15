@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>League of Legends Scrollytelling</title>
+    <meta name="description" content="Scrollama: Sticky Overlay Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <main>
+        <section id="scrolly" class="side-by-side">
+
+            <article class="text">
+                <div class="step" data-step="1">
+                    <h5>Analyzing 2024 Spring League of Legends eSports Champion and Game Data</h5>
+                    <p>This scrollytelling project highlights statistics from League of Legends eSports, specifically the
+                       2024 LCK, LPL, LCS, and LEC Spring Splits. These regions are considered as the "Major" regions in League eSports</p>
+                    <p>Currently displayed are the top 10 "mid lane" Champions sorted by the number of games they were picked by pro players </p>
+                    <p>Let's dive into some of the statistics that can provide us a look into the meta and player narratives from this season</p>
+                </div>
+                <div class="step" data-step="1">
+                    <h5>Highlighting the "Meta" Champions</h5>
+                    <p class="p2">But how many of these picks actually saw consistent success?
+                    </p>
+                    <p>
+                        Currently highlighted are the highest pick rate champions that had above a 50% win rate. While there are many considerations to think about,
+                        we can clearly see that the top 5 most picked mid lane champions had a "negative" win rate. </p>
+                    <p>Some extrapolations from this data is that either mid lane players
+                        and their coaches did not have a correct read on the mid lane champion meta or that players tended to stick to "comfort" picks like long-time staple Azir, even if 
+                        the pick was weaker. One could also say that this shows that mid lane overall did not have as much influence on the outcome of games during this split.
+                    </p>
+                </div>
+
+                <div class="step" data-step="2">
+                    <h5>WWFP: What Would Faker Pick?</h5>
+                    <p class="p3">Now we focus our attention on who many consider to be the greatest player of all time, T1's mid lane player, Faker. 
+                        We highlighted the champions out of the top 10 who Faker picked at least once throughout the Spring Split.
+                    </p>
+                    <p>
+                        We can see here that he did not play 5 out of 10 of the top "meta" picks, specifically leaving out many of the
+                        "aggresive" picks like LeBlanc, Akali, and Yone, who each can influence the state of the game early on and potentially "snowball" out of control. This conservative champion pool is something Faker is often criticized for,
+                        as many partially blamed T1's lack of draft prowess on Faker's refusal to adapt to new meta champions
+                    </p>
+                </div>
+
+                <div class="step" data-step="3">
+                    <h5>Faker's Performance Throughout the Split</h5>
+                    <p class="p4"> But was the "Unkillable Demon King able to make his limited Champion pool work?" On display right now is a graph of Faker's kill/death/assist ratio
+                        over time, with red dots being games lost and green being games won. Hover over a dot to see which champion he played
+                    </p>
+                    <p>
+                        We can see that Faker's team, T1, won 11 out of 14 games during the Spring Split, and even ended up winning the World Championship later that year.
+                        We can see that all three games T1 lost, Faker was playing Azir, the most picked mid-lane champion overall and one of his comfort picks. He tended to perform
+                        lower in all three of these games, leading to a team loss.
+                    </p>
+                </div>
+
+                <div class="step" data-step="4">
+                    <h5>Does Meta Matter for Faker?</h5>
+                    <p>Now we highlight the games where Faker played a Champion that had a winrate over 50%. We see here that every game where Faker played one of these champions resulted in a team win,
+                        and that he mainly played Neeko and Taliyah, two champions that had high play rates as shown before.
+                    </p>
+                    <p>If anything is clear from League of Legends eSports history, it's that champion pick and team composition are important, sometimes even moreso than the players themselves.
+                        While there are many confounding variables such as how much Faker has practiced a champion, what his team is comfortable playing with, whether or not the enemy "counterpicked" Faker, etc., it is statistically clear that Faker had more success playing 
+                        higher win-rate champions
+                    </p>
+                    <p>
+                        Now, with a new T1 roster coming into 2025, all we can do is wait and see if the "King" himself will change his old ways as the meta shifts or stay with his current pool. Either way, he has much to prove this season.
+                    </p>
+                  </div>
+            </article>
+
+            <div class="graphic">
+                <svg></svg>
+            </div>
+        </section>
+
+        <section id="outro"></section>
+    </main>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
