@@ -3,8 +3,8 @@
 
     {
       "title": "Firefighter ChatBot",
-      "description": "Built a webpage that utilizes Retrieval Augmented Generation with the context of past wildfire data to power a chatbot that can help firefighters",
-      "technologies": ["React.js", "Next.js", "AWS S3", "RAG"]
+      "description": "Built a webpage that utilizes a Retrieval Augmented Generation pipeline to power a chatbot that can help firefighters retreive information on wildfires",
+      "technologies": ["React.js", "Python", "AWS S3", "RAG"]
     },
     {
       "title": "Community Finder - Georgia Tech Human-Computer interaction",
