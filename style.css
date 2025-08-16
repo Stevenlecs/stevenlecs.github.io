@@ -2,7 +2,7 @@
 :root {
     --primary-color: #2d2d2d;
     --secondary-color: #c3c3c3e9;
-    --accent-color: #a2cfe3e0;
+    --accent-color: #e2e1dd;
     --text-color: #2d2d2d;
     --spacing-unit: 8px;
     --font-primary: 'Inter', sans-serif;
@@ -172,7 +172,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: 30px;
+    top: 10px;
 }
 
 @media (max-width: 768px) {
