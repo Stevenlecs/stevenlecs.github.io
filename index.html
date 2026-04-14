@@ -4,69 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steven Le | Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1, mongoose-serif:wght@0,100..900&display=swap" rel="stylesheet">
 </head>
-<body id="top">
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#top" class="nav-logo">SL</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="resume.pdf" download class="btn resume-btn">Resume</a>
-                <a href="https://github.com/stevenlecs" target="_blank" class="social-icon">
+<body id="top" class="bg-white text-primary font-primary antialiased">
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 bg-white/90 backdrop-blur-md border-b border-gray-100 flex justify-between items-center">
+        <a href="#top" class="text-2xl font-bold tracking-tighter">SL</a>
+        <div class="flex items-center gap-6">
+            <a href="#about" class="hover:text-gray-500 transition-colors">About</a>
+            <a href="#projects" class="hover:text-gray-500 transition-colors">Projects</a>
+            <a href="resume.pdf" download class="px-4 py-2 rounded bg-accent text-primary font-medium hover:bg-gray-200 transition-all">Resume</a>
+            <div class="flex gap-3">
+                <a href="https://github.com/stevenlecs" target="_blank" class="hover:opacity-70 transition-opacity">
                     <img src="images/github.png" alt="GitHub" width="25" height="25">
                 </a>
-                <a href="https://linkedin.com/in/steven-le-906032178/" target="_blank" class="social-icon">
+                <a href="https://linkedin.com/in/steven-le-906032178/" target="_blank" class="hover:opacity-70 transition-opacity">
                     <img src="images/linkedin.png" alt="LinkedIn" width="25" height="25">
                 </a>
             </div>
-
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Steven Le</h1>
-            <p class="subtitle">Machine Learning/Software Engineer</p>
+    <header class="relative h-[80vh] flex items-center justify-center text-center px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: url('images/gris.gif'); background-size: 80%; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="relative z-10">
+            <h1 class="text-6xl md:text-8xl font-light tracking-tight mb-4">Steven Le</h1>
+            <p class="text-xl md:text-2xl text-gray-600 font-light">Machine Learning / Software Engineer</p>
         </div>
     </header>
 
-    <main class="container">
-        <section class="section about" id="about">
-            <div class="section-content about-flex">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p class="lead-text">ML Professional, Film Enthusiast</p>
-                    <p>I'm Gatech MSCS grad and an MLE working at Google on the YouTube Community Discovery team.
+    <main class="relative z-10">
+        <section id="about" class="section-container bg-accent/30">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-medium mb-6">About Me</h2>
+                    <p class="text-xl text-gray-700 mb-4 font-medium italic">ML Professional, Film Enthusiast</p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        I'm Gatech MSCS grad and an MLE working at Google on the YouTube Community Discovery team.
                         Previously I was in the defense space making undersea systems more intelligent.
                         When I'm not working you can find me watching films, reading, or gaming.
                     </p>
                 </div>
-                <div class="profile-image">
-                    <img src="images/profile.jpeg" alt="Steven Le" />
+                <div class="flex-shrink-0">
+                    <img src="images/profile.jpeg" alt="Steven Le" class="w-80 h-96 object-cover rounded-lg shadow-lg hover:scale-[1.02] transition-transform duration-500">
                 </div>
             </div>
         </section>
 
-        <section class="section projects" id="projects">
-            <div class="section-content">
-                <h2>Projects</h2>
-                <div id="projectsList" class="projects-grid"></div>
-            </div>
+        <section id="projects" class="section-container">
+            <h2 class="text-3xl font-medium mb-12">Projects</h2>
+            <div id="projectsList" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-        </div>
+    <footer class="py-12 bg-secondary text-center border-t border-gray-200">
+        <p class="text-gray-500 text-sm">&copy; 2026 Steven Le</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
